@@ -1,0 +1,23 @@
+public class Palindrome 
+{
+ public static void main(String gg[] )
+	{
+ 
+		int last;
+    int sum=0;
+    int a;
+		int input=1991; // number  to be checked  
+    a=input; 
+   	while(a>0)
+		{   
+      System.out.println("Input Number "+a);  
+			last=a%10;   
+			sum=(sum*10)+last;  
+			a=a/10;
+	 	}    
+    if(sum==input)    
+			System.out.println("Number is palindrome ");    
+		else    
+			System.out.println("Number is not palindrome");    
+ }
+}
